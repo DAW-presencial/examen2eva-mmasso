@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DatosController;
+use App\Http\Controllers\TutoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::get('/', function () {
 Route::resource('/datos',DatosController::class);
 
 Route::view("/formulario","formulario");
+
+Route::Resource('tutores', TutoresController::class); 
