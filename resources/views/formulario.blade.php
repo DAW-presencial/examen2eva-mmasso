@@ -50,7 +50,7 @@
                 <div class="text-danger my-2">{{ $message }}</div>
                 @enderror
             </div>
-                <select class="form-select col-md-4" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example" id="documentType" >
                     <option selected>Sense especificar</option>
                     <option value="DNI">Dni</option>
                     <option value="NIE">Nie</option>
@@ -97,19 +97,19 @@
 
             <div class="form-row">
 
-                <select class="form-select col-md-4" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example" id="pais_documento">
                     <option selected>Sense especificar</option>
                     <option value="España">España</option>
                     <option value="Andorra">Andorra</option>
                 </select>
 
-                <select class="form-select col-md-4" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example" id="provincia">
                     <option selected>Sense especificar</option>
                     <option value="Baleares">Baleares</option>
                     <option value="Madrid">Madrid</option>
                 </select>
 
-                <select class="form-select col-md-4" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example" id="municipio">
                     <option selected>Sense especificar</option>
                     <option value="Palma">Palma</option>
                     <option value="Sineu">Sineu</option>
@@ -120,7 +120,7 @@
 
             <div class="form-row">
 
-                <select class="form-select col-md-4" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example" id="status">
                     <option selected>Sense especificar</option>
                     <option value="Activo">Tutor en activo</option>
                     <option value="Inactivo">Tutor sin activar</option>
