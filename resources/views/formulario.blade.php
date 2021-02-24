@@ -24,7 +24,6 @@
 
     <!--Form-->
     <form method="POST" action="/form" class="container mt-5">
-        @csrf
         <div class="form-row">
 
             <select class="form-select" aria-label="Default select example">
