@@ -32,13 +32,13 @@
         </select>
 
         <div class="form-group col-md-4">
-            <label for="telefono">@lang('formData.telefono')</label>
+            <label for="telefono"></label>
             <input type="tel" class="form-control" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
         </div>
 
         <div class="form-group col-md-4">
             <label for="correo"></label>
-            <input type="email" class="form-control @error('correo')" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
+            <input type="email" class="form-control" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
         </div>
 
 
