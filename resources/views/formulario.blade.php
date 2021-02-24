@@ -45,7 +45,7 @@
 
             <div class="form-group @error('companyName') is-invalid @enderror col-md-4">
                 <label for="companyName">@lang('formData.companyName')</label>
-                <input type="text" class="form-control @error('companyName') is-invalid @enderror" name="companyName" value="{{ old('companyName') }}" placeholder="Nombre de la empresa">
+                <input type="text" required class="form-control @error('companyName') is-invalid @enderror" name="companyName" value="{{ old('companyName') }}" placeholder="Nombre de la empresa">
                 @error('companyName')
                 <div class="text-danger my-2">{{ $message }}</div>
                 @enderror
@@ -58,7 +58,7 @@
 
                 <div class="form-group @error('documentNumber') is-invalid @enderror col-md-4">
                     <label for="documentNumber">@lang('formData.documentNumber')</label>
-                    <input type="text" class="form-control @error('documentNumber') is-invalid @enderror" name="documentNumber" value="{{ old('documentNumber') }}" placeholder="+34 971123456">
+                    <input type="text" required class="form-control @error('documentNumber') is-invalid @enderror" name="documentNumber" value="{{ old('documentNumber') }}" placeholder="+34 971123456">
                     @error('documentNumber')
                     <div class="text-danger my-2">{{ $message }}</div>
                     @enderror
@@ -69,7 +69,7 @@
 
                 <div class="form-group @error('nom') is-invalid @enderror col-md-4">
                     <label for="nom">@lang('formData.nom')</label>
-                    <input type="text" class="form-control @error('nom') is-invalid @enderror" name="nom" value="{{ old('nom') }}" placeholder="Pepe">
+                    <input type="text" required class="form-control @error('nom') is-invalid @enderror" name="nom" value="{{ old('nom') }}" placeholder="Pepe">
                     @error('nom')
                     <div class="text-danger my-2">{{ $message }}</div>
                     @enderror
@@ -78,7 +78,7 @@
 
                 <div class="form-group @error('llinatge1') is-invalid @enderror col-md-4">
                     <label for="llinatge1">@lang('formData.llinatge1')</label>
-                    <input type="text" class="form-control @error('llinatge1') is-invalid @enderror" name="llinatge1" value="{{ old('llinatge1') }}" placeholder="Salas">
+                    <input type="text" required class="form-control @error('llinatge1') is-invalid @enderror" name="llinatge1" value="{{ old('llinatge1') }}" placeholder="Salas">
                     @error('llinatge1')
                     <div class="text-danger my-2">{{ $message }}</div>
                     @enderror
@@ -87,7 +87,7 @@
 
                 <div class="form-group @error('llinatge2') is-invalid @enderror col-md-4">
                     <label for="llinatge2">@lang('formData.llinatge2')</label>
-                    <input type="text" class="form-control @error('llinatge2') is-invalid @enderror" name="llinatge2" value="{{ old('llinatge2') }}" placeholder="Rodriguez">
+                    <input type="text" required class="form-control @error('llinatge2') is-invalid @enderror" name="llinatge2" value="{{ old('llinatge2') }}" placeholder="Rodriguez">
                     @error('llinatge2')
                     <div class="text-danger my-2">{{ $message }}</div>
                     @enderror
@@ -128,7 +128,7 @@
 
                 <div class="form-group @error('telefono') is-invalid @enderror col-md-4">
                     <label for="telefono">@lang('formData.telefono')</label>
-                    <input type="tel" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
+                    <input type="tel" required class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
                     @error('telefono')
                     <div class="text-danger my-2">{{ $message }}</div>
                     @enderror
@@ -136,7 +136,7 @@
 
                 <div class="form-group @error('correo') is-invalid @enderror col-md-4">
                     <label for="correo">@lang('formData.correo')</label>
-                    <input type="email" class="form-control @error('correo') is-invalid @enderror" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
+                    <input type="email" required class="form-control @error('correo') is-invalid @enderror" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
                     @error('correo')
                     <div class="text-danger my-2">{{ $message }}</div>
                     @enderror
