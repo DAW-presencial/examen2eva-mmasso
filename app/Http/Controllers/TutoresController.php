@@ -55,17 +55,17 @@ class TutoresController extends Controller
         try {
             $nuevoTutor = new tutores();
             $nuevoTutor->nombre_empresa = $request['companyName'];
-            $nuevoTutor->nombre_empresa = $request['documentType'];
-            $nuevoTutor->nombre_empresa = $request['documentNumber'];
-            $nuevoTutor->nombre_empresa = $request['nom'];
-            $nuevoTutor->nombre_empresa = $request['llinatge1'];
-            $nuevoTutor->nombre_empresa = $request['llinatge2'];
-            $nuevoTutor->nombre_empresa = $request['pais_documento'];
-            $nuevoTutor->nombre_empresa = $request['provincia'];
-            $nuevoTutor->nombre_empresa = $request['municipio'];
-            $nuevoTutor->nombre_empresa = $request['status'];
-            $nuevoTutor->nombre_empresa = $request['telefono'];
-            $nuevoTutor->nombre_empresa = $request['correo'];
+            $nuevoTutor->documentType = $request['documentType'];
+            $nuevoTutor->documentNumber = $request['documentNumber'];
+            $nuevoTutor->nom = $request['nom'];
+            $nuevoTutor->llinatge1 = $request['llinatge1'];
+            $nuevoTutor->llinatge2 = $request['llinatge2'];
+            $nuevoTutor->pais_documento = $request['pais_documento'];
+            $nuevoTutor->provincia = $request['provincia'];
+            $nuevoTutor->municipio = $request['municipio'];
+            $nuevoTutor->status = $request['status'];
+            $nuevoTutor->telefono = $request['telefono'];
+            $nuevoTutor->correo = $request['correo'];
             $nuevoTutor->save();
             DB::commit();
         } catch (\Exception $e) {
