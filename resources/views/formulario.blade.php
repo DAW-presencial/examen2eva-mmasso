@@ -25,65 +25,32 @@
     <!--Form-->
     <form method="POST" action="/form" class="container mt-5">
         @csrf
-        <div>
-            <h2>
-                Tutor de la empresa
-            </h2>
-            <div class="form-group">
-                <label for="companyName">@lang('formData.companyName')</label>
-                <input type="text" class="form-control @error('companyName') is-invalid @enderror" name="companyName" value="{{ old('companyName') }}" placeholder="Nombre de la empresa">
-                @error('companyName')
+        <div class="form-row">
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Sense especificar</option>
+                <option value="Activo">Tutor en activo</option>
+                <option value="Inactivo">Tutor sin activar</option>
+            </select>
+
+            <div class="form-group @error('telefono') is-invalid @enderror col-md-4">
+                <label for="telefono">@lang('formData.telefono')</label>
+                <input type="tel" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
+                @error('telefono')
                 <div class="text-danger my-2">{{ $message }}</div>
-                @enderror
+                @telefono
             </div>
 
-            <div class="form-row">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Sense especificar</option>
-                    <option value="DNI">Dni</option>
-                    <option value="NIE">Nie</option>
-                </select>
-
-                <div class="form-group @error('documentNumber') is-invalid @enderror col-md-4">
-                    <label for="documentNumber">@lang('formData.documentNumber')</label>
-                    <input type="text" class="form-control @error('documentNumber') is-invalid @enderror" name="documentNumber" value="{{ old('documentNumber') }}" placeholder="+34 971123456">
-                    @error('documentNumber')
-                    <div class="text-danger my-2">{{ $message }}</div>
-                    @documentNumber
-                </div>
+            <div class="form-group @error('correo') is-invalid @enderror col-md-4">
+                <label for="correo">@lang('formData.correo')</label>
+                <input type="email" class="form-control @error('correo') is-invalid @enderror" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
+                @error('correo')
+                <div class="text-danger my-2">{{ $message }}</div>
+                @correo
             </div>
 
-            <div class="form-row">
-
-                <div class="form-group @error('nom') is-invalid @enderror col-md-4">
-                    <label for="nom">@lang('formData.nom')</label>
-                    <input type="text" class="form-control @error('nom') is-invalid @enderror" name="nom" value="{{ old('nom') }}" placeholder="Pepe">
-                    @error('nom')
-                    <div class="text-danger my-2">{{ $message }}</div>
-                    @nom
-                </div>
-
-
-                <div class="form-group @error('llinatge1') is-invalid @enderror col-md-4">
-                    <label for="llinatge1">@lang('formData.llinatge1')</label>
-                    <input type="text" class="form-control @error('llinatge1') is-invalid @enderror" name="llinatge1" value="{{ old('llinatge1') }}" placeholder="Salas">
-                    @error('llinatge1')
-                    <div class="text-danger my-2">{{ $message }}</div>
-                    @llinatge1
-                </div>
-
-
-                <div class="form-group @error('llinatge2') is-invalid @enderror col-md-4">
-                    <label for="llinatge2">@lang('formData.llinatge2')</label>
-                    <input type="text" class="form-control @error('llinatge2') is-invalid @enderror" name="llinatge2" value="{{ old('llinatge2') }}" placeholder="Rodriguez">
-                    @error('llinatge2')
-                    <div class="text-danger my-2">{{ $message }}</div>
-                    @llinatge2
-                </div>
-
-            </div>
-
-            </form>
+        </div>
+    </form>
 </body>
 
 
