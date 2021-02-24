@@ -23,32 +23,25 @@
 <body>
 
     <!--Form-->
-    <form method="POST" action="/form" class="container mt-5">
-        <div class="form-row">
+    <form method="POST" action="/formulario" class="container mt-5">
 
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Sense especificar</option>
-                <option value="Activo">Tutor en activo</option>
-                <option value="Inactivo">Tutor sin activar</option>
-            </select>
+        <select class="form-select col-md-4" aria-label="Default select example">
+            <option selected>Sense especificar</option>
+            <option value="Activo">Tutor en activo</option>
+            <option value="Inactivo">Tutor sin activar</option>
+        </select>
 
-            <div class="form-group @error('telefono') is-invalid @enderror col-md-4">
-                <label for="telefono">@lang('formData.telefono')</label>
-                <input type="tel" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
-                @error('telefono')
-                <div class="text-danger my-2">{{ $message }}</div>
-                @telefono
-            </div>
-
-            <div class="form-group @error('correo') is-invalid @enderror col-md-4">
-                <label for="correo">@lang('formData.correo')</label>
-                <input type="email" class="form-control @error('correo') is-invalid @enderror" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
-                @error('correo')
-                <div class="text-danger my-2">{{ $message }}</div>
-                @correo
-            </div>
-
+        <div class="form-group col-md-4">
+            <label for="telefono">@lang('formData.telefono')</label>
+            <input type="tel" class="form-control" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
         </div>
+
+        <div class="form-group col-md-4">
+            <label for="correo"></label>
+            <input type="email" class="form-control @error('correo')" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
+        </div>
+
+
     </form>
 </body>
 
