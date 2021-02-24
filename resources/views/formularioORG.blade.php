@@ -61,7 +61,7 @@
                     <input type="text" class="form-control @error('documentNumber') is-invalid @enderror" name="documentNumber" value="{{ old('documentNumber') }}" placeholder="+34 971123456">
                     @error('documentNumber')
                     <div class="text-danger my-2">{{ $message }}</div>
-                    @documentNumber
+                    @enderror
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
                     <input type="text" class="form-control @error('nom') is-invalid @enderror" name="nom" value="{{ old('nom') }}" placeholder="Pepe">
                     @error('nom')
                     <div class="text-danger my-2">{{ $message }}</div>
-                    @nom
+                    @enderror
                 </div>
 
 
@@ -81,7 +81,7 @@
                     <input type="text" class="form-control @error('llinatge1') is-invalid @enderror" name="llinatge1" value="{{ old('llinatge1') }}" placeholder="Salas">
                     @error('llinatge1')
                     <div class="text-danger my-2">{{ $message }}</div>
-                    @llinatge1
+                    @enderror
                 </div>
 
 
@@ -90,7 +90,7 @@
                     <input type="text" class="form-control @error('llinatge2') is-invalid @enderror" name="llinatge2" value="{{ old('llinatge2') }}" placeholder="Rodriguez">
                     @error('llinatge2')
                     <div class="text-danger my-2">{{ $message }}</div>
-                    @llinatge2
+                    @enderror
                 </div>
 
             </div>
@@ -131,7 +131,7 @@
                     <input type="tel" class="form-control @error('telefono') is-invalid @enderror" name="telefono" value="{{ old('telefono') }}" placeholder="Numero de telefono">
                     @error('telefono')
                     <div class="text-danger my-2">{{ $message }}</div>
-                    @telefono
+                    @enderror
                 </div>
 
                 <div class="form-group @error('correo') is-invalid @enderror col-md-4">
@@ -139,7 +139,7 @@
                     <input type="email" class="form-control @error('correo') is-invalid @enderror" name="correo" value="{{ old('correo') }}" placeholder="Correo electronico">
                     @error('correo')
                     <div class="text-danger my-2">{{ $message }}</div>
-                    @correo
+                    @enderror
                 </div>
 
             </div>
