@@ -20,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::resource('/datos',DatosController::class);
+
+Route::view("/formulario","formulario");
