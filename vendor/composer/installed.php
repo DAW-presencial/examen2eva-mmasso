@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v8.5.10',
-    'version' => '8.5.10.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'a1cf1f32fff27dd01d12ae2c58fec4b411b837a6',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -440,12 +440,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v8.5.10',
-      'version' => '8.5.10.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'a1cf1f32fff27dd01d12ae2c58fec4b411b837a6',
     ),
     'laravel/sail' => 
     array (
@@ -760,8 +760,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1243,6 +1243,22 @@
       array (
       ),
       'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
+    ),
+    'twbs/bootstrap' => 
+    array (
+      'pretty_version' => 'v4.0.0',
+      'version' => '4.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8a628b943cf31ca0a002c08af661a95772480225',
+    ),
+    'twitter/bootstrap' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v4.0.0',
+      ),
     ),
     'vlucas/phpdotenv' => 
     array (
