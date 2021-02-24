@@ -40,16 +40,17 @@
             <h2>
                 Tutor de la empresa
             </h2>
-            <div class="form-group">
+
+            <div class="form-row">
+
+            <div class="form-group @error('companyName') is-invalid @enderror col-md-4">
                 <label for="companyName">@lang('formData.companyName')</label>
                 <input type="text" class="form-control @error('companyName') is-invalid @enderror" name="companyName" value="{{ old('companyName') }}" placeholder="Nombre de la empresa">
                 @error('companyName')
                 <div class="text-danger my-2">{{ $message }}</div>
                 @enderror
             </div>
-
-            <div class="form-row">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="DNI">Dni</option>
                     <option value="NIE">Nie</option>
@@ -96,19 +97,19 @@
 
             <div class="form-row">
 
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="España">España</option>
                     <option value="Andorra">Andorra</option>
                 </select>
 
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="Baleares">Baleares</option>
                     <option value="Madrid">Madrid</option>
                 </select>
 
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="Palma">Palma</option>
                     <option value="Sineu">Sineu</option>
@@ -119,7 +120,7 @@
 
             <div class="form-row">
 
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select col-md-4" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="Activo">Tutor en activo</option>
                     <option value="Inactivo">Tutor sin activar</option>
