@@ -12,8 +12,11 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template 
+    <link href="pricing.css" rel="stylesheet">-->
 
 </head>
 
@@ -93,7 +96,7 @@
             </div>
 
             <div class="form-row">
-                País document de identitat
+
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="España">España</option>
@@ -116,7 +119,7 @@
 
 
             <div class="form-row">
-                
+
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Sense especificar</option>
                     <option value="Activo">Tutor en activo</option>
